@@ -1,6 +1,7 @@
 // soundboard.js
 const soundButtons = document.querySelectorAll('.sound-button');
 let activeSounds = [];
+const stopInstruction = document.getElementById('stop-instruction'); // Get the instruction element
 
 soundButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -27,3 +28,8 @@ function stopAllSounds() {
     });
     activeSounds = [];
 }
+
+// Show the instruction message after a short delay
+setTimeout(() => {
+    stopInstruction.style.display = 'block';
+}, 3000); // Display the message after 3 seconds
