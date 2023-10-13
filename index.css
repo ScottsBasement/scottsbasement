@@ -1,13 +1,14 @@
-/* index.css */
+/* index.css duh */
 body {
     font-family: 'Gabarito', sans-serif;
-    background-color: #f2f2f2;
+    background-color: #333; 
+    color: #fff; 
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #222; 
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -24,19 +25,19 @@ nav li {
 
 nav a {
     font-family: 'Gabarito', sans-serif;
-    color: #fff;
+    color: #fff; 
     text-decoration: none;
 }
 
 .main-content, .services, .contact {
-    background-color: #fff;
+    background-color: #444; 
     margin: 20px;
     padding: 20px;
     font-family: 'Gabarito', sans-serif;
 }
 
 footer {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     text-align: center;
     padding: 10px;
