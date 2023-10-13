@@ -57,3 +57,10 @@ nav a {
 .sound-button.active {
     background-color: #0056b3;
 }
+
+.stop-instruction {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
