@@ -1,6 +1,48 @@
 /* styles.css */
+body {
+    font-family: 'Gabarito', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    font-family: 'Gabarito', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.soundboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .sound-button {
-    width: 120px;
+    width: 160px;
     height: 60px;
     background-color: #007BFF;
     color: #fff;
