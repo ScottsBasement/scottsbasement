@@ -6,13 +6,8 @@ soundButtons.forEach(button => {
         const sound = new Audio(button.dataset.sound);
         sound.play();
         button.classList.add('active');
-    });
-
-    button.addEventListener('mouseup', () => {
-        button.classList.remove('active');
-    });
-
-    button.addEventListener('mouseleave', () => {
-        button.classList.remove('active');
+        setTimeout(() => {
+            button.classList.remove('active');
+        }, sound.duration * 1000);
     });
 });
