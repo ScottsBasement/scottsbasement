@@ -20,18 +20,17 @@
 
     <section class="main-content">
         <h2>About</h2>
-        <p>This is a revamped version of Scott's Secret Stuff and will include the old stuff aswell.</p>
+        <p>This is a revamped version of Scott's Secret Stuff and will include the old stuff as well.</p>
     </section>
 
-<section class="services">
-    <h2>Services</h2>
-    <ul>
-        <li><a href="https://scottstheatres.vercel.app/">Scott's Theatres</a></li>
-        <li><a href="https://dice-of-fortune.vercel.app/">Dice Of Fortune</a></li>
-        <li><a href="https://ubg247-backupsc0tt.vercel.app/">UBG247+SC0TT</a></li>
-    </ul>
-</section>
-
+    <section class="services">
+        <h2>Services</h2>
+        <ul>
+            <li><a href="https://scottstheatres.vercel.app/">Scott's Theatres</a></li>
+            <li><a href="https://dice-of-fortune.vercel.app/">Dice Of Fortune</a></li>
+            <li><a href="https://ubg247-backupsc0tt.vercel.app/">UBG247+SC0TT</a></li>
+        </ul>
+    </section>
 
     <section class="contact">
         <h2>Contact</h2>
@@ -41,5 +40,52 @@
     <footer>
         &copy; 2023 Scott's Basement | All Rights Reserved
     </footer>
+
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+    <script>
+        // JavaScript for dark mode toggle and saving user preference
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Check if dark mode preference is stored in local storage
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+        // Apply dark mode if it was enabled, or set it to light mode if it was disabled
+        if (isDarkMode) {
+            enableDarkMode();
+        } else {
+            enableLightMode();
+        }
+
+        // Event listener for the dark mode toggle button
+        darkModeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                enableLightMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        // Function to enable dark mode
+        function enableDarkMode() {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'true');
+        }
+
+        // Function to enable light mode
+        function enableLightMode() {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'false');
+        }
+    </script>
+
+<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer> // Discord Server
+    new Crate({
+        server: '1102717886985928796', // Scott's Basement
+        channel: '1102717886985928799' // #💬┆general
+    })
+</script>
+    
 </body>
 </html>
