@@ -43,6 +43,7 @@ body.dark-mode {
 
 header.dark-mode {
     background-color: #222;
+    border: 1px solid #fff;
 }
 
 nav a.dark-mode {
@@ -57,3 +58,5 @@ footer.dark-mode {
     background-color: #222;
     color: #fff;
 }
+
+
