@@ -60,23 +60,19 @@
 
         // Event listener for the dark mode toggle button
         darkModeToggle.addEventListener('click', () => {
-            if (body.classList.contains('dark-mode')) {
-                enableLightMode();
-            } else {
-                enableDarkMode();
-            }
+            body.classList.toggle('dark-mode'); // Use toggle to switch between modes
+            const isCurrentlyDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isCurrentlyDarkMode ? 'true' : 'false');
         });
 
         // Function to enable dark mode
         function enableDarkMode() {
             body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'true');
         }
 
         // Function to enable light mode
         function enableLightMode() {
             body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', 'false');
         }
     </script>
 
