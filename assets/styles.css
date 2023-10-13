@@ -44,3 +44,31 @@ footer {
     padding: 10px;
     font-family: 'Gabarito', sans-serif;
 }
+
+/* scrolling */
+.scrollable-container {
+    width: 100%; /* Set the container width to 100% */
+    overflow-x: auto; /* Add a horizontal scrollbar when content overflows */
+    white-space: nowrap; /* Prevent line breaks for the buttons */
+}
+
+.button-container {
+    display: inline-block; /* Display buttons in a row */
+    white-space: nowrap; /* Prevent line breaks for the buttons */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
