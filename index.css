@@ -23,9 +23,10 @@ nav li {
     margin: 0 20px;
 }
 
-nav a {
+/* Style unvisited & visited links to be white */
+nav a, nav a:visited {
     font-family: 'Gabarito', sans-serif;
-    color: #fff; /* Change link color to light */
+    color: #fff; /* Change link color to white */
     text-decoration: none;
 }
 
