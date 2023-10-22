@@ -17,7 +17,7 @@ soundButtons.forEach(button => {
 
 document.addEventListener('keydown', event => {
     // Check if Ctrl and S keys are pressed
-    if (event.ctrlKey && event.key === 's') {
+    if (event.shiftKey && event.key === 's') {
         stopAllSounds();
     }
 });
