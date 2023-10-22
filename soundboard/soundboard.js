@@ -16,8 +16,8 @@ soundButtons.forEach(button => {
 });
 
 document.addEventListener('keydown', event => {
-    // Check if Ctrl and S keys are pressed
-    if (event.shiftKey && event.key === 's') {
+    // Check if Shift and S keys are pressed - uppercase letter if shift
+    if (event.shiftKey && event.key === 'S') {
         stopAllSounds();
     }
 });
